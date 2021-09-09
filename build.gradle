@@ -17,9 +17,11 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 
-	repositories {
-		maven { url 'https://jitpack.io' }
+	maven {
+		url 'https://jitpack.io'
+		allowInsecureProtocol true
 	}
+
 }
 
 dependencies {
