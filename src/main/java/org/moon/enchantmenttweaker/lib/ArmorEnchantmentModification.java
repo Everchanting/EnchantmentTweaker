@@ -13,7 +13,7 @@ public interface ArmorEnchantmentModification extends EnchantmentModification {
      * @param level
      * @return reductionAmount
      */
-    int getDamageReduction(ItemStack stack, DamageSource source, int level);
+    default int getDamageReduction(ItemStack stack, DamageSource source, int level) { return 0; }
 
     static int getProtectionAmount(Enchantment enchantment, ItemStack stack, DamageSource source, int level) {
         int amount = 0;
