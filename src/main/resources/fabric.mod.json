@@ -12,10 +12,8 @@
     "homepage": "https://github.com/Kingdom-of-Moon/EnchantmentTweaker",
     "sources": "https://github.com/Kingdom-of-Moon/EnchantmentTweaker"
   },
-
   "license": "CC0-1.0",
   "icon": "assets/enchantmenttweaker/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -25,10 +23,14 @@
   "mixins": [
     "enchantmenttweaker.mixins.json"
   ],
-
   "depends": {
     "fabricloader": ">=0.11.3",
     "minecraft": "1.17.x",
     "java": ">=16"
+  },
+  "custom": {
+    "modmenu": {
+      "badges": [ "library" ]
+    }
   }
 }
